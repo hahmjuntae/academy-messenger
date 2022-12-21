@@ -32,7 +32,7 @@ function App() {
 
   let winWidth = window.innerWidth;
   function checkWidthSize() {
-    if (winWidth > 576) {
+    if (winWidth > 500) {
       setCheckedWidth(true);
     } else {
       setCheckedWidth(false);

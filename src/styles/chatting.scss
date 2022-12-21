@@ -14,9 +14,9 @@ main.Chatting {
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 576px;
+  width: 500px;
   min-height: 100vh;
-  max-width: 576px;
+  max-width: 500px;
   margin-bottom: 45px;
   padding-top: 64px;
   background-color: #eee;
@@ -175,9 +175,9 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 576px;
+  width: 500px;
   height: 45px;
-  max-width: 576px;
+  max-width: 500px;
   background-color: #fff;
   transform: translate(-50%, 0);
   form {
