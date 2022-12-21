@@ -1,0 +1,254 @@
+/* Chatting.scss */
+@import url(common.scss);
+
+/* header */
+header.Chatting {
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* main */
+main.Chatting {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  min-height: 100vh;
+  max-width: 576px;
+  margin-bottom: 45px;
+  padding-top: 64px;
+  background-color: #eee;
+}
+.date_info {
+  opacity: 0.5;
+  margin: 10px;
+  text-align: center;
+}
+
+/* chat */
+.chat_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: calc(100% - 80px);
+}
+.chat {
+  margin: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* my chat */
+.my {
+  align-items: flex-end;
+  align-self: flex-end;
+  max-width: 240px;
+  margin-right: 10px;
+  .chat {
+    position: relative;
+    background-color: #bbb;
+    .newchat_time {
+      position: absolute;
+      bottom: 3px;
+      left: -40px;
+      display: flex;
+      width: 50px;
+      color: #8d8d8d;
+      font-size: 12px;
+      .icon {
+        margin-right: 5px;
+        font-size: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  .chat_time {
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+    width: 50px;
+    color: #8d8d8d;
+  }
+}
+.my.new {
+  margin-top: 30px;
+}
+
+/* other chat */
+.other {
+  margin-top: 20px;
+  margin-left: 50px;
+  .chat_time {
+    position: absolute;
+    right: -70px;
+    bottom: -20px;
+    width: 50px;
+    color: #8d8d8d;
+  }
+  .chat {
+    position: relative;
+    top: 25px;
+    left: 15px;
+  }
+  .profile_img {
+    position: absolute;
+    top: -5px;
+    left: -55px;
+    width: 50px;
+    height: 50px;
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .profile_name {
+    position: absolute;
+    left: 10px;
+    display: block;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* attach */
+.attach-preview {
+  position: absolute;
+  bottom: 55px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+}
+.attach-preview-clear {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.attach-preview-photo {
+  position: relative;
+  border-radius: 15px;
+}
+.attach-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  .attach-photo {
+    max-width: 200px;
+    margin: 5px;
+    border-radius: 15px;
+  }
+  .newchat_time {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    display: flex;
+    width: 50px;
+    color: #8d8d8d;
+    font-size: 12px;
+    .icon {
+      margin-right: 5px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 576px;
+  height: 45px;
+  max-width: 576px;
+  background-color: #fff;
+  transform: translate(-50%, 0);
+  form {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 40px);
+    background-color: #fff;
+  }
+  fieldset {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  .text_field {
+    width: calc(100% - 40px);
+    height: 35px;
+    margin-right: 50px;
+    font-size: 16px;
+    text-indent: 10px;
+    &:focus {
+      border: 1px solid #b3b4b4;
+      border-radius: 5px;
+    }
+  }
+  .plus_btn {
+    .icon {
+      width: 28px;
+      height: 28px;
+      margin-right: 15px;
+      padding: 5px;
+      border: 2px solid #b3b4b4;
+      border-radius: 5px;
+      color: #b3b4b4;
+      cursor: pointer;
+      &:hover {
+        border-color: #373737;
+        color: #373737;
+      }
+    }
+  }
+  .emoticon_btn {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .icon {
+      width: 25px;
+      height: 25px;
+      color: #b3b4b4;
+      &:hover {
+        color: #373737;
+      }
+    }
+  }
+  .send_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    color: #b3b4b4;
+    font-size: 23px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #373737;
+    }
+  }
+}

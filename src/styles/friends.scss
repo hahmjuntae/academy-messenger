@@ -1,0 +1,84 @@
+/* Friends.scss */
+@import url(common.scss);
+
+/* loading */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 576px;
+  margin: 0 auto;
+  color: #000;
+}
+
+/* main */
+main {
+  .main_section {
+    .header-friends {
+      height: 32px;
+      padding-left: 15px;
+      border: 1px solid #ebebeb;
+      color: #000;
+      line-height: 32px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16px;
+          .profile_img {
+            img {
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+          .profile_name {
+            flex: auto;
+          }
+          .profile_messages {
+            height: 30px;
+            margin-right: 15px;
+            padding: 0 10px;
+            border-radius: 5px;
+            background-color: #efefef;
+            color: #000;
+            font-size: 12px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+    .chats_img {
+      width: 50px;
+      height: 50px;
+      margin: 15px;
+    }
+    .chats_cont {
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      justify-content: center;
+      .chats_name {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .chats_latest {
+        color: #8e9399;
+        font-size: 12px;
+      }
+    }
+    .chats_time {
+      margin-right: 15px;
+      color: #8e9399;
+      font-size: 12px;
+    }
+  }
+}

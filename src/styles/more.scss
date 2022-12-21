@@ -1,0 +1,119 @@
+/* More.scss */
+@import url(common.scss);
+
+/* user-info */
+.user_info {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #ebebeb;
+}
+.profile_img {
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+.profile_info {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  .profile_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .profile_email {
+    color: #8e9399;
+  }
+}
+.chat_img .icon {
+  margin-right: 15px;
+  color: #000;
+  font-size: 30px;
+}
+.logout {
+  margin-right: 20px;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+/* user-menu */
+.user_menu {
+  height: 125px;
+  border-bottom: 1px solid #ebebeb;
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    li {
+      flex: 1;
+      span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #000;
+        font-weight: bold;
+        transition: transform 300ms linear 0s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.05);
+        }
+        .icon {
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* plus-friends */
+.plus_friends {
+  height: 280px;
+  div.more-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #ebebeb;
+    font-size: 16px;
+    font-weight: bold;
+    span {
+      display: flex;
+      color: #aaa;
+      font-weight: normal;
+      .header_icon {
+        margin-right: 5px;
+      }
+    }
+  }
+  .plus_list {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+      height: 45px;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      .icon {
+        margin: 0 15px;
+        font-size: 25px;
+      }
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}

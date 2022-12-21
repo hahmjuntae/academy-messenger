@@ -1,0 +1,48 @@
+/* Find.scss */
+@import url(common.scss);
+
+/* find-method */
+.find_method {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  li {
+    flex: 1;
+    overflow: hidden;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+      transition: transform 300ms linear 0s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .find_method_icon {
+        margin: 5px 0;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+/* recommend-section */
+.recommend_section {
+  .header-find {
+    height: 32px;
+    padding-left: 15px;
+    border: 1px solid #efefef;
+    color: #000;
+    line-height: 32px;
+  }
+  .recommend-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+}
