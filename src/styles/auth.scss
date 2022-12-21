@@ -1,0 +1,110 @@
+@import url(common.scss);
+
+/* main */
+div.auth {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.header {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding: 10px;
+    }
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  svg {
+    stroke: #000;
+    width: 250px;
+    height: 250px;
+  }
+}
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .authBtn {
+    position: relative;
+    width: 180px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    text-indent: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 2px;
+    transition: transform 0.2s ease 0s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    .google-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+/* auth-form */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .authInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #f3f3f3;
+    background-color: white;
+    color: #b6b6b6;
+    font-size: 12px;
+    box-shadow: 0 0 2px;
+    &.authSubmit {
+      margin-top: 10px;
+      border: 1px solid #f3f3f3;
+      background-color: #f6f6f6;
+      color: #b6b6b6;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 0 1px;
+    }
+    &:last-of-type:hover {
+      border: 1px solid #000;
+      background-color: #000;
+      color: #fff;
+      box-shadow: 0 0 1px #000;
+    }
+  }
+  .authError {
+    margin-top: 15px;
+    color: tomato;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+.authSwitch {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
